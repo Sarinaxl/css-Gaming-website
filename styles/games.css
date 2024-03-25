@@ -1,0 +1,162 @@
+body{
+    font-family: Poppins-Regular;
+}
+
+.main{
+    display: flex;
+}
+
+.main-item{
+    display: block;
+    width: 50%;
+    color: white;
+}
+
+.page{
+    margin-top: 50px;
+}
+
+.page-title{
+    color: var(--secondary);
+}
+
+.main-h{
+    font-size: 30px;
+    font-family: Poppins-Bold;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.main-text{
+    width: 90%;
+    margin-top: 80px;
+    word-spacing: 10px;
+}
+
+.btn-main{
+    display: block;
+    margin-top: 80px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 30px;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.work{
+    margin-top: 200px;
+    color: white;
+}
+
+.work-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin-top: 80px;
+    padding: 0px;
+    margin-bottom: 70px;
+}
+
+
+.work-item{
+    background-color: var(--brown);
+    width: 27%;
+    padding: 20px;
+    border-radius: 20px;
+    padding-left: 40PX;
+}
+
+.work-title{
+    margin-top: 30px;
+    border-radius: 10PX;
+    width: 40%;
+    padding: 12PX;
+    font-size: 15PX;
+}
+
+.work-h{
+    font-size: 20PX;
+    margin-left: 2px;
+}
+
+.work-text{
+    font-family: Poppins-Light;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.brown{
+    background-color: #DC42001C;
+}
+
+
+.purple{
+    background-color: #B000DC1C;;
+}
+
+
+.green{
+    background-color: #00DC8D1C;;
+}
+
+.banner{
+    width: 1440px;
+    background-color: var(--brown);
+    margin-left: -150px;
+    display: flex;
+    height: 600px;
+    color: white;
+    font-family: Poppins-Light;
+}
+.banner-item{
+    width: 50%;
+    height: 100%;
+}
+
+.banner-img{
+    margin-top: 110px;
+    margin-left: 120px;
+}
+
+.banner-h5{
+    margin-top: 110px;
+}
+
+.banner-h3{
+    margin-top: 30px;
+    width: 70%;
+    font-size: 28px;
+}
+
+.banner-text{
+    width: 70%;
+    margin-top: 40px;
+    word-spacing: 4px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.team{
+    margin-top: 100px;
+    color: white;
+}
+
+.team-list{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.team-item{
+    width: 300px;
+    background-color: var(--brown);
+    text-align: center;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 0px;
+}

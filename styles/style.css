@@ -1,20 +1,285 @@
-/* 1. don't modify this style */
-* {
-  padding: 0;
-  margin: 0;
-
-  box-sizing: border-box;
+@font-face {
+    font-family: Poppins-Black;
+    src: url(../fonts/Poppins-Black.ttf);
 }
 
-/* 2. we use :root for default variables */
+@font-face {
+    font-family: Poppins-BlackItalic;
+    src: url(../fonts/Poppins-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraLightItalic;
+    src: url(../fonts/Poppins-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url(../fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-LightItalic;
+    src: url(../fonts/Poppins-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-MediumItalic;
+    src: url(../fonts/Poppins-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBoldItalic;
+    src: url(../fonts/Poppins-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Thin;
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ThinItalic;
+    src: url(../fonts/Poppins-ThinItalic.ttf);
+}
+
 :root {
-  /* --"somekey-attr": "somevalue" i.e : */
-  --black-700: #000;
-}
-/* 3. and we use it like this */
-.elementOne {
-  /* var(--"somekey-attr") */
-  background-color: var(--black-700);
+    --bg-gradinat: #3B2A9F;
+    --primary: #3B2A9F;
+    --primary-100: #5141AA;
+    --secondary: #FA8305;
+    --brown: #1C140F;
+    --black: #070707; 
 }
 
-/* good luck */
+body{
+    width: 1440px;
+    background-color: var(--bg-gradinat);
+    margin: 0px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+
+.logo{
+    font-family:Poppins-Bold;
+    margin-left: 50px;
+    font-size: 2em;
+}
+
+.nav-list{
+    font-family: Poppins-Light;
+    list-style: none;
+    display: flex;
+    width: 680;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 480px;
+}
+
+.nav-item{
+    color: white;
+    position: relative;
+    padding-top: 15px;
+}
+
+.active::before{
+    position: absolute;
+    top: 73%;
+    left: 20px;
+    content: "";
+    width: 4px;
+    background-color: var(--secondary);
+    height: 2px;
+    display: block;
+}
+
+.active::after{
+    position: absolute;
+    left: -5px;
+    content: "";
+    width: 22px;
+    background-color: var(--secondary);
+    height: 2px;
+    display: block;
+}
+
+.secondary{
+    background-color: var(--secondary);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+main{
+    width: 1140;
+    margin-left: 150px;
+}
+
+.search{
+    margin-top: 100px;
+}
+
+.search-title{
+    width: 50%;
+    font-family: Poppins-Regular;
+    color: white;
+}
+
+.search-txt{
+    margin-top: 40px;
+}
+
+.searchbox{
+    background-color: var(--brown);
+    border-radius: 15px;
+    color: white;
+    font-family: Poppins-Regular;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.box-txt{
+    margin-top: 10px;
+}
+
+.textbox{
+    width: 50%;
+}
+
+.box{
+    position: relative;
+    font-family: Poppins-Regular;
+    padding-top: 50px;
+}
+
+.search-i{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 20px;
+    border: 0px;
+}
+
+.btn-search{
+    position: absolute;
+    top: 55px;
+    left: 295px;
+    width: 100;
+    height: 40;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+    font-family: Poppins-Light;
+}
+
+.footer{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.footer-item{
+    max-width: 400px;
+}
+
+.footer-list{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer-logo{
+    font-family:Poppins-Bold;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.footer-copy{
+    font-size: 12px;
+    text-align: center;
+    height: 45px;
+    padding-top: 5px;
+}
+
+.social-footer{
+    padding-top: 120px;
+}
+
+.social{
+    width: 17px;
+    height: 17px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
